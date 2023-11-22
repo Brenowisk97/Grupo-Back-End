@@ -10,6 +10,20 @@ Para esse projeto, foi escolhida a linguagem _Python_, além de outras ferrament
  - Insomnia: Framework web em Python que permite a criação de aplicação rapidamente e otimizada
  - Flask: Ferramenta para teste/validação de API e usado para requisições HTTP (GET, POST, DELETE)
 
+Concluindo a AP1, foi possível anonomizar as imagens com sucesso com a integração, inclusiva, via API com o envio das imagens com o método POST e o código feito retornando uma nova imagem num diretório à parte com os principais metadadados pessoais e identificáveis dos pacientes sendo anonomizados.
 
 Nesse sentido, para organização do projeto, o Trello foi escolhida como gerenciador de atividades e tarefas da disciplina. A ferramenta permite a criação de quadros e cartões que indicam o status de cada atividade, no contexto de seu responsável e etapa em que está inserida.
 
+Para o Trello, criamos colunas específicas que ajudaram a agendar e definir, principalmente, as tarefas prioritárias, em estudo e futuras, presentes no link: https://trello.com/b/jedVnv7E/gerenciamento-projeto-back-end
+ - Apresentação - AP2
+ - Informações gerais
+ - AP1
+ - AP2
+ - Em andamento
+ - Concluído
+ - Estudo
+ - Encontros Virtuais
+
+ Em relação a AP2, a projeto foi de segmentar as imagens para agilizar o processo da Dosimagem. Com o uso de Python, novamente, foi utilizada a biblioteca TotalSegmentator com o intuito de cumprir essas tarefas com a mesma ferramenta presente no 3DSlicer. Nesse sentido, é importante ressaltar que não foi possível criar API, uma vez que houve um problema com as imagens disponibilizadas causando atrasos no projeto da turma. 
+
+ No entanto, foi possível concluir essas segmentações com sucesso, permitindo a particionar as imagens numa nova pasta.
