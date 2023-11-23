@@ -6,9 +6,9 @@ Ao longo do semestre, o grupo teve o objetivo de cumprir as atividades de __segm
 
 
 Para esse projeto, foi escolhida a linguagem _Python_, além de outras ferramentas como Pydicom, Insomnia e Flask:
- - Pydicom: Biblioteca em Python que permite manipular arquivos no formato DICOM
- - Insomnia: Framework web em Python que permite a criação de aplicação rapidamente e otimizada
- - Flask: Ferramenta para teste/validação de API e usado para requisições HTTP (GET, POST, DELETE)
+ - __Pydicom__: Biblioteca em Python que permite manipular arquivos no formato DICOM
+ - __Insomnia__: Framework web em Python que permite a criação de aplicação rapidamente e otimizada
+ - __Flask__: Ferramenta para teste/validação de API e usado para requisições HTTP (GET, POST, DELETE)
 
 Concluindo a AP1, foi possível anonomizar as imagens com sucesso com a integração, inclusiva, via API com o envio das imagens com o método POST e o código feito retornando uma nova imagem num diretório à parte com os principais metadadados pessoais e identificáveis dos pacientes sendo anonomizados.
 
@@ -24,6 +24,10 @@ Para o Trello, criamos colunas específicas que ajudaram a agendar e definir, pr
  - Estudo
  - Encontros Virtuais
 
- Em relação a AP2, a projeto foi de segmentar as imagens para agilizar o processo da Dosimagem. Com o uso de Python, novamente, foi utilizada a biblioteca TotalSegmentator com o intuito de cumprir essas tarefas com a mesma ferramenta presente no 3DSlicer. Nesse sentido, é importante ressaltar que não foi possível criar API, uma vez que houve um problema com as imagens disponibilizadas causando atrasos no projeto da turma. 
+ Em relação a AP2, a projeto foi de segmentar as imagens para agilizar o processo da Dosimagem. Com o uso de Python, novamente, foi utilizada a biblioteca TotalSegmentator com o intuito de cumprir essas tarefas com a mesma ferramenta presente no 3DSlicer. Nesse sentido, é importante ressaltar a API foi elaborada, com testes usando a ferramenta Insomnia, tal como na AP1, funcionando conforme esperado. Nessa segunda avaliação, o Flask também foi utilizado como framework web para elaboração da API para envio das imagens. Ademais, foi possível concluir essas segmentações com sucesso, permitindo a particionar as imagens numa nova pasta. 
 
- No entanto, foi possível concluir essas segmentações com sucesso, permitindo a particionar as imagens numa nova pasta.
+Portanto, na AP2, as ferramentas utilizadas foram:
+ - __TotalSegmentator__: Biblioteca em Python que permite segmentar as imagens como no 3DSlicer
+ - __Insomnia__: Framework web em Python que permite a criação de aplicação rapidamente e otimizada
+ - __Flask__: Ferramenta para teste/validação de API e usado para requisições HTTP (GET, POST, DELETE)
+
