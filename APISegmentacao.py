@@ -10,13 +10,21 @@ def perform_segmentation():
     input_path = data.get('input_path')
     output_path = data.get('output_path')
     segmentation_task = data.get('task')
-    lista_orgaos = data.get('lista de orgaos', [])
-    estatisticas = data.get('estatisticas', False)
+    organs = data.get('organs', [])
+    statistics = data.get('statistics', False)
     fast_mode = data.get('fast mode', False)
 
+    if segmentation_task != "total":
+        totalsegmentator(input_path, output_path, task=segmentation_task,
+                        statistics=statistics, fast=fast_mode)
+    else:
+        if len(organs) == 0:
+            totalsegmentator(input_path, output_path, task=segmentation_task,
+                         statistics=statistics, fast=fast_mode)
+        else:
+            totalsegmentator(input_path, output_path, task=segmentation_task, roi_subset=organs,
+                     statistics=statistics, fast=fast_mode)
 
-    totalsegmentator(input_path, output_path, task=segmentation_task, roi_subset=lista_orgaos,
-                     statistics=estatisticas, fast=fast_mode)
 
     # Return a response
     response = {
